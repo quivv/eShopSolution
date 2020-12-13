@@ -13,5 +13,7 @@ namespace eShopSolution.Data.Entities
         public int? ParentId { set; get; }
         public Status Status { set; get; }
 
+        public List<ProductInCategory> ProductInCategories { set; get; }
+        public List<CategoryTranslation> CategoryTranslations { set; get; }
     }
 }
