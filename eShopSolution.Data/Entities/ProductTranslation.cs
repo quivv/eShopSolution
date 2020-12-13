@@ -16,6 +16,8 @@ namespace eShopSolution.Data.Entities
         public string SeoAlias { set; get; }
         public string LanguageId { set; get; }
 
+        public Product Product { set; get; }
+        public Language Language { set; get; }
 
     }
 }
