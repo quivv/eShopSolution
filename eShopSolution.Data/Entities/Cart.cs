@@ -17,5 +17,6 @@ namespace eShopSolution.Data.Entities
 
         public Product Product { set; get; }
 
+        public AppUser AppUser { set; get; }
     }
 }
