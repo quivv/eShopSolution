@@ -56,6 +56,7 @@ namespace eShopSolution.Data.EF
         public DbSet<AppConfig> AppConfigs { set; get; }
         public DbSet<Cart> Carts { set; get; }
         public DbSet<CategoryTranslation> CategoryTranslations { set; get; }
+        public DbSet<ProductInCategory> ProductInCategories { get; set; }
         public DbSet<Contact> Contacts { set; get; }
         public DbSet<Language> Languages { set; get; }
         public DbSet<Order> Orders { set; get; }
@@ -63,7 +64,8 @@ namespace eShopSolution.Data.EF
         public DbSet<ProductTranslation> ProductTranslations { set; get; }
         public DbSet<Promotion> Promotions { set; get; }
         public DbSet<Transaction> Transactions { set; get; }
-        //public DbSet<ProductImage> ProductImages { set; get; }
+        public object ProductInCategory { get; set; }
+        public DbSet<ProductImage> ProductImages { set; get; }
 
     }
 }
