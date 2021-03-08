@@ -1,15 +1,14 @@
-﻿using eShopSolution.Application.Catalog.Dtos;
-using eShopSolution.Application.Catalog.Products.Dtos;
-using eShopSolution.Application.Catalog.Products.Dtos.Public;
-using System;
+﻿using eShopSolution.ViewModels.Catalog.Products;
+using eShopSolution.ViewModels.Common;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace eShopSolution.Application.Catalog.Products
 {
     public interface IPublicProductService
     {
-        Task<PagedResult<ProductViewMode>> GetAllByCategoryId(GetProductPagingRequest request);
+        Task<PagedResult<ProductViewMode>> GetAllByCategoryId(GetPublicProductPagingRequest request);
+
+        Task<List<ProductViewMode>> GetAll();
     }
 }
